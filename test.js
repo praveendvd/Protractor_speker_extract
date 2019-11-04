@@ -75,8 +75,8 @@ describe('Protractor Demo App', function() {
 
 
 
-        
-        await stream.write(name.replace(/"/g,'""')+ ","+position.replace(/"/g,'""')+","+company.replace(/"/g,'""')+"\n");
+
+        await stream.write(await name.replace(/,/g,'","')+ ","+await position.replace(/,/g,'')+","+await company.replace(/,/g,'","')+"\n");
 
 
 
@@ -87,6 +87,17 @@ describe('Protractor Demo App', function() {
     }
     stream.end();
   });
+
+  it('should have a title @test @Smoke @Something', async   function() {
+    var myStr = 'this,is,a,test';
+var newStr = myStr.replace(/,/g, '","');
+
+await stream.write(newStr+","+newStr);
+await
+console.log( newStr );
+  });
+
+
 
 
 });
