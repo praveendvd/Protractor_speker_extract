@@ -3,6 +3,14 @@ const fs = require('fs');
 describe('Protractor Demo App', function() {
 
   it('should have a title @Regression @Smoke @Something', async   function() {
+
+
+
+
+
+
+
+
     let EC = await protractor.ExpectedConditions;
     let button= await element(by.css('a[data-cookie-set="accept"]'));
     let isClickable = await EC.elementToBeClickable(button);
@@ -53,7 +61,7 @@ describe('Protractor Demo App', function() {
         position=position.trim();
       }else{
         position="Not Avaiable";
-        await browser.sleep(4000);
+        //await browser.sleep(4000);
       }
 
 
@@ -69,14 +77,16 @@ describe('Protractor Demo App', function() {
                   company=company.trim();
           }else {
                   company="Not Avaiable";
-                  await browser.sleep(4000);
+                  //await browser.sleep(4000);
       }
       }
 
 
 
 
-        await stream.write(await name.replace(/,/g,'","')+ ","+await position.replace(/,/g,'')+","+await company.replace(/,/g,'","')+"\n");
+        //await stream.write(await name.replace(/,/g,'","')+ ","+await position.replace(/,/g,'","')+","+await company.replace(/,/g,'","')+"\n");
+
+        await stream.write("\""+name+"\""+","+"\""+position+"\""+","+"\""+company+"\""+"\n");
 
 
 
@@ -88,14 +98,6 @@ describe('Protractor Demo App', function() {
     stream.end();
   });
 
-  it('should have a title @test @Smoke @Something', async   function() {
-    var myStr = 'this,is,a,test';
-var newStr = myStr.replace(/,/g, '","');
-
-await stream.write(newStr+","+newStr);
-await
-console.log( newStr );
-  });
 
 
 
