@@ -13,7 +13,7 @@ npm install -g protractor
 webdriver-manager update
 
 
-**To run **
+**To run**
 
 Goto the extracted directory and run
 
