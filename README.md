@@ -1,7 +1,7 @@
 **Download the code as zip
 
 
-**install Nodejs
+**install Nodejs**
 
 First goto : https://nodejs.org/en/download/
 and Install nodejs
@@ -20,7 +20,7 @@ Goto the extracted directory and run
 protractor conf.js
 
 
-**output
+**output**
 
 will be saved in extracted folder as append.csv
 
