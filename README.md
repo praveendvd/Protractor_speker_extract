@@ -1,7 +1,7 @@
 **Download the code as zip
 
 
-**install Nodejs
+**install Nodejs**
 
 First goto : https://nodejs.org/en/download/
 and Install nodejs
@@ -13,14 +13,14 @@ npm install -g protractor
 webdriver-manager update
 
 
-**To run **
+**To run**
 
 Goto the extracted directory and run
 
 protractor conf.js
 
 
-**output
+**output**
 
 will be saved in extracted folder as append.csv
 
