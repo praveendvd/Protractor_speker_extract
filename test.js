@@ -6,7 +6,12 @@ describe('Protractor Demo App', function() {
 
 
 
-
+    try {
+      fs.unlinkSync('append.csv');
+      console.log('successfully deleted /tmp/hello');
+    } catch (err) {
+      // handle the error
+    }
 
 
 
