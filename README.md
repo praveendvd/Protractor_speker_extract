@@ -3,7 +3,7 @@
 First goto : https://nodejs.org/en/download/
 and Install nodejs
 
-**Run below commands**
+**Then run below commands**
 
 npm install -g protractor
 
